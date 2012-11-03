@@ -2,3 +2,4 @@
 *.swp
 *.pyc
 *.db
+collected_static_files/
