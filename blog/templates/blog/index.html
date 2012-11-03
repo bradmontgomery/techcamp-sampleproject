@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Blog Posts...
+{% endblock %}
+
+{% block content %}
+
+    <h1>Posts:</h1>
+    <ul>
+    {% for p in posts %}
+        <li>
+        <a href="{% url display_post p.slug %}">
+        {{ p.title }}
+        </a> by {{ p.author }}.<br/>
+        Posted on {{ p.published_on|date:"M d, Y" }}.
+        </li>
+    {% endfor %}
+    </ul>
+
+{% endblock %}
