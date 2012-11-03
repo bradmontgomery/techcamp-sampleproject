@@ -4,6 +4,12 @@ Sample Django Project
 This is a sample django project, a portion of which was demo'ed at TechCamp
 Memphis, Nov. 2012.
 
+*WARNING*: This is a whole project. You'd typically generate your own project
+directory and then build your own apps. If you *do* decide to use/deploy this,
+read through the ``settings.py`` file and change things to suite your needs 
+(particularly the ``SECRET_KEY`` value).
+
+
 Deploying to Heroku
 -------------------
 
